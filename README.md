@@ -1,5 +1,5 @@
 # Porfolio Ariel Perez
-
+Tecnologia que estoy implementando es vue 3 con typescript y vite
 
 ## Para levantar el proyecto de manera local
 ### Programas
