@@ -14,8 +14,7 @@ const visibleRoutes = computed(() => routes.filter(route => !route.meta.hidden))
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <!-- Convertir el logo en un enlace a la ruta "Home" -->
-      <RouterLink class="navbar-brand" :to="{ name: 'home' }">Navbar</RouterLink>
+      <RouterLink class="navbar-brand" :to="{ name: 'home' }">Ariel Perez</RouterLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -35,6 +34,7 @@ const visibleRoutes = computed(() => routes.filter(route => !route.meta.hidden))
               :class="{ active: route.name === currentPrimaryRoute?.name }"
               :to="route.path"
             >
+            <i :class="route.icon"></i>
               {{ route.meta.title }}
               <span v-if="route.name === currentPrimaryRoute?.name" class="visually-hidden">(current)</span>
             </RouterLink>

@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router"
 import Navbar from './components/navbar/Navbar.vue'
-// import Personal from './views/PersonalView.vue'
-// import Skill from './views/SkillsView.vue'
-// import Projects from './views/ProjectsView.vue'
-// import Contact from './views/ContactView.vue'
+import favicon from './assets/favicon.png'
+import { useHead } from "unhead"
+useHead({
+  link: [{ rel: "icon", type: "image/jpg", href: favicon }],
+})
 </script>
 <template>
 
@@ -14,12 +15,7 @@ import Navbar from './components/navbar/Navbar.vue'
 
   <div class="container">
     <RouterView />
-    <h1>Hoalzxczxczxs</h1>
   </div>
-  <!-- <Personal/>
-  <Skill/>
-  <Projects/>
-  <Contact/> -->
 </template>
 
 <style scoped>

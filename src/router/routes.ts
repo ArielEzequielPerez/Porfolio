@@ -2,16 +2,18 @@ import Personal from "../views/PersonalView.vue"
 import Skills from "../views/SkillsView.vue"
 import Contact from "../views/ContactView.vue"
 import Projects from "../views/ProjectsView.vue"
+import Home from '../views/HomeView.vue'
 
 export default [
   {
     path:"/",
     name: "home",
     label: "Home",
-    meta: {title : "Home", hidden : true}
+    meta: {title : "Home", hidden : true},
+    component : Home
   },
   {
-    path: "/personal",
+    path: "/Personal",
     name: "personal",
     label: "Personal",
     icon:"pi pi-user",

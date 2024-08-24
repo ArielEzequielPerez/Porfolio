@@ -12,17 +12,18 @@ Tecnologia que estoy implementando es vue 3 con typescript y vite
  Para ejecutar el proyecto de manera local podes usar estos comandos:
  - Crea la imagen
     ```
-    docker build -t vue-porfolio .
+    docker compose build
     ```
  - levanta el proyecto de manera local
     ```
-    docker run -p 5000:8080 vue-porfolio 
+    docker compose up 
     ```
  - ir al browser copiar y pegar esta url
     ```
-    localhost:8080
+    http://localhost:5173
     ```
 
 ## Figma
 
-Para hacer este porfolio me base en el siguiente figma
+Para hacer este porfolio me base en el siguiente figma:
+(https://www.figma.com/design/Qf9wc02yqtu5ucswRbScHZ/Software-developer-portfolio-(Community)?node-id=401-3&t=AEObc9HumDwj7GWS-0)
