@@ -2,7 +2,13 @@
 
 
 ## Para levantar el proyecto de manera local
-Esta
+### Programas
+- [visual studio code](https://code.visualstudio.com/)
+- Extensione
+  - [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+- [Docker](https://www.docker.com/)
+
+
  Para ejecutar el proyecto de manera local podes usar estos comandos:
  - Crea la imagen
     ```
