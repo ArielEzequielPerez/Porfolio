@@ -1,0 +1,9 @@
+services:
+  vue:
+    build:
+      context: .
+      target: dev
+    volumes:
+      - .:/usr/src/app
+    ports: 
+    - 5173:5173
