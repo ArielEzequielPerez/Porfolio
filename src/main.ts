@@ -7,5 +7,9 @@ import PrimeVue from 'primevue/config';
 import router from "./router"
 import 'primevue/resources/themes/lara-dark-teal/theme.css'
 import 'primeicons/primeicons.css'
+import { plugin, defaultConfig } from '@formkit/vue'
+import '@formkit/themes/genesis'    
+import config from "../src/config/formkit.config"
+import '@formkit/themes/genesis'
 
-createApp(App).use(PrimeVue, { unstyled: true }).use(router).mount('#app')
+createApp(App).use(PrimeVue, { unstyled: true }).use(plugin, defaultConfig(config)).use(router).mount('#app')

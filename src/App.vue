@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router"
 import Navbar from './components/navbar/Navbar.vue'
-import favicon from './assets/favicon.png'
-import { useHead } from "unhead"
-useHead({
-  link: [{ rel: "icon", type: "image/jpg", href: favicon }],
-})
+
 </script>
 <template>
 

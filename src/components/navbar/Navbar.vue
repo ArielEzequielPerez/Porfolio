@@ -27,7 +27,7 @@ const visibleRoutes = computed(() => routes.filter(route => !route.meta.hidden))
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <span v-for="route in visibleRoutes" :key="route.name">
             <RouterLink
               class="nav-link"
@@ -44,3 +44,5 @@ const visibleRoutes = computed(() => routes.filter(route => !route.meta.hidden))
     </div>
   </nav>
 </template>
+<style lang="scss">
+</style>
